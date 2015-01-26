@@ -1,0 +1,18 @@
+div(ng-include='"components/navbar/navbar.html"')
+
+.container
+  .row
+    .col-lg-offset-4.col-lg-4
+      a.btn.btn-lg.btn-default(ng-click="login()") Login Anonymously
+  .row
+    .col-lg-3(ng-repeat="bidder in bidders")
+      div(bidder="bidder")
+
+footer.footer
+  .container
+    p
+      | Angular Fullstack v2.0.13
+      = ' | '
+      a(href='https://twitter.com/tyhenkel') @tyhenkel
+      = ' | '
+      a(href='https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open') Issues
